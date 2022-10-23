@@ -1,0 +1,54 @@
+Thu Oct 20 04:11:48 2022
+Exp setting: xlmr for XABSA (BIEOS) | 0.4087 | en -> fr in acs_kd_s setting.
+Model is saved in /content/outputs/xlmr-en-fr-acs_kd_s
+Train setting: bs=16, lr=5e-05, total_steps=300 (Start eval from 0)
+
+* Results *:  Dev  /  Test  
+Step-200:
+micro_f1: 0.5505 / 0.4087     precision: 0.6026 / 0.5011     recall  : 0.5068 / 0.3451     eval_loss: 0.1781 / 0.2173     
+Step-100:
+micro_f1: 0.4561 / 0.3274     precision: 0.4633 / 0.3598     recall  : 0.4493 / 0.3005     eval_loss: 0.2264 / 0.2696     
+
+
+Thu Oct 20 04:42:19 2022
+Exp setting: xlmr for XABSA (BIEOS) | 0.5314 | en -> fr in acs_kd_s setting.
+Model is saved in /content/outputs/xlmr-en-fr-acs_kd_s
+Train setting: bs=16, lr=5e-05, total_steps=300 (Start eval from 0)
+
+* Results *:  Dev  /  Test  
+Step-200:
+micro_f1: 0.6600 / 0.5314     precision: 0.6802 / 0.6141     recall  : 0.6411 / 0.4684     eval_loss: 0.1621 / 0.1983     
+Step-100:
+micro_f1: 0.6532 / 0.5417     precision: 0.6879 / 0.6311     recall  : 0.6219 / 0.4746     eval_loss: 0.1705 / 0.2063     
+
+
+Thu Oct 20 07:29:04 2022
+Exp setting: xlmr for XABSA (BIEOS) | 0.5134 | en -> fr in acs_mtl setting.
+Model is saved in /content/outputs/xlmr-en-fr-acs_mtl
+Train setting: bs=16, lr=5e-05, total_steps=300 (Start eval from 0)
+
+* Results *:  Dev  /  Test  
+Step-100:
+micro_f1: 0.5960 / 0.5134     precision: 0.6783 / 0.6479     recall  : 0.5315 / 0.4253     eval_loss: 0.1749 / 0.2074     
+
+
+Thu Oct 20 16:51:38 2022
+Exp setting: mbert for XABSA (BIEOS) | 0.2988 | en -> fr in acs_mtl setting.
+Model is saved in outputs/mbert-en-fr-acs_mtl
+Train setting: bs=8, lr=5e-05, total_steps=300 (Start eval from 0)
+
+* Results *:  Dev  /  Test  
+Step-100:
+micro_f1: 0.4451 / 0.2988     precision: 0.5789 / 0.4643     recall  : 0.3616 / 0.2203     eval_loss: 0.2232 / 0.2653     
+
+
+Thu Oct 20 16:56:21 2022
+Exp setting: mbert for XABSA (BIEOS) | 0.2988 | en -> fr in acs_mtl setting.
+Model is saved in outputs/mbert-en-fr-acs_mtl
+Train setting: bs=8, lr=5e-05, total_steps=300 (Start eval from 0)
+
+* Results *:  Dev  /  Test  
+Step-100:
+micro_f1: 0.4451 / 0.2988     precision: 0.5789 / 0.4643     recall  : 0.3616 / 0.2203     eval_loss: 0.2232 / 0.2653     
+
+

@@ -1,0 +1,20 @@
+Thu Oct 20 16:51:38 2022
+Exp setting: mbert for XABSA (BIEOS) | 0.2988 | en -> fr in acs_mtl setting.
+Model is saved in outputs/mbert-en-fr-acs_mtl
+Train setting: bs=8, lr=5e-05, total_steps=300 (Start eval from 0)
+
+* Results *:  Dev  /  Test  
+Step-100:
+micro_f1: 0.4451 / 0.2988     precision: 0.5789 / 0.4643     recall  : 0.3616 / 0.2203     eval_loss: 0.2232 / 0.2653     
+
+
+Thu Oct 20 16:56:21 2022
+Exp setting: mbert for XABSA (BIEOS) | 0.2988 | en -> fr in acs_mtl setting.
+Model is saved in outputs/mbert-en-fr-acs_mtl
+Train setting: bs=8, lr=5e-05, total_steps=300 (Start eval from 0)
+
+* Results *:  Dev  /  Test  
+Step-100:
+micro_f1: 0.4451 / 0.2988     precision: 0.5789 / 0.4643     recall  : 0.3616 / 0.2203     eval_loss: 0.2232 / 0.2653     
+
+
