@@ -391,7 +391,7 @@ def evaluate(args, eval_dataset, model, idx2tag, mode, step=None):
     preds, pred_labels, gold_labels = None, None, None
     results = {}
 
-    for batch in tqdm(eval_dataloader, desc="Evaluating"):
+    for batch in tqdm(eval_dataloader, desc=f"Evaluating mode:{mode}"):
         model.eval()
         with torch.no_grad():
             inputs = {'input_ids':      batch['input_ids'].to(args.device),

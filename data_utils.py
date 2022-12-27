@@ -214,10 +214,12 @@ def build_or_load_dataset(args, tokenizer, mode='train',kind=0):
         file_name_or_list = f"gold-{args.tgt_lang}-test.txt"
 
     elif mode == 'unlabeled':
+        print("read data with unlabeled mode")
         # use unlabeled data (without considering the labels)
         file_name_or_list = f"gold-{args.tgt_lang}-train.txt"
 
     elif mode == 'unlabeled_mtl':
+        print("read data with unlabeled mode")
         file_name_or_list = [f"gold-{l}-train.txt" for l in ['fr', 'es', 'nl', 'ru']]
 
     elif mode == 'train':
