@@ -69,7 +69,7 @@ def init_args():
                         help="Pretrained tokenizer name or path if not the same as model_name")
     parser.add_argument("--cache_dir", default="", type=str,
                         help="Where do you want to store the pre-trained models downloaded from s3")
-    parser.add_argument("--max_seq_length", default=128, type=int,
+    parser.add_argument("--max_seq_length", default=256, type=int,
                         help="The maximum total input sequence length after tokenization. Sequences longer "
                              "than this will be truncated, sequences shorter will be padded.")
     parser.add_argument("--do_train", action='store_true', help="Whether to run training.")
@@ -126,7 +126,7 @@ def init_args():
     args = parser.parse_args()
 
     # set up output dir: './outputs/mbert-en-fr-zero_shot/'
-    output_dir = f"{args.outputDIR}/{args.tfm_type}-{args.src_lang}-{args.tgt_lang}-{args.exp_type}"
+    output_dir = f"{args.outputDIR}/{args.tfm_type}-{args.src_lang}-{args.tgt_lang}-{args.exp_type}-{args.seed}"
     if not os.path.exists(output_dir):
         os.mkdir(output_dir)
     args.output_dir = output_dir
@@ -440,7 +440,8 @@ def evaluate(args, eval_dataset, model, idx2tag, mode, step=None):
 
 def get_teacher_model_path(args):
     if 'mtl' in args.exp_type:
-        one_tgt_lang = 'fr'
+        # one_tgt_lang = 'ru'
+        one_tgt_lang = args.tgt_lang
         saved_model_dir = f"{args.outputDIR}/{args.tfm_type}-{args.src_lang}-{one_tgt_lang}-{args.exp_type}"
     
     elif args.exp_type == 'zero_shot':
@@ -456,6 +457,7 @@ def get_teacher_model_path(args):
     # retrieve all the saved checkpoints for model selection
     all_checkpoints = []
     saved_model_dir=args.saved_model_dir
+    # 现在无标记数据是多个语言的，也可以尝试添加多个教师
     for f in os.listdir(saved_model_dir):
         sub_dir = os.path.join(saved_model_dir, f)
         if os.path.isdir(sub_dir):
@@ -502,6 +504,7 @@ def get_teacher_model_path(args):
                 global_step = checkpoint.split('-')[-1] if len(checkpoint) > 1 else ""
                 i = checkpoint.split('-')[-2] if len(checkpoint) > 1 else -1
                 if int(i)!=kind:
+                    # kind是什么意思，为什么要跳过
                     continue
                 # only perform evaluation at the specific epochs
                 eval_begin, eval_end = args.eval_begin_end.split('-')
@@ -526,9 +529,11 @@ def get_teacher_model_path(args):
                         best_checkpoint_g = checkpoint
             best_checkpoints.append(best_checkpoint)
             best_checkpoints.append(best_checkpoint_g)
+            # best_checkpoints有2个元素
         return best_checkpoints
+
 def get_teacher_probs(args, dataset, model_class, teacher_model_path):
-    print(teacher_model_path)
+    print('teacher_model_path\n', teacher_model_path)
     teacher_model = model_class.from_pretrained(teacher_model_path)
     teacher_model.to(args.device)
     
@@ -708,8 +713,10 @@ def main():
         config_class, model_class, tokenizer_class = MODEL_CLASSES[args.tfm_type]
         tokenizer = tokenizer_class.from_pretrained(args.model_name_or_path)
         if args.exp_type == 'macs_kd':
+            # macs_kd，有es fr nl ru 4种语言的无标记数据，来进行蒸馏
             dataset = build_or_load_dataset(args, tokenizer, mode='unlabeled_mtl')
         else:
+            # 而acs_kd_s acs_mtl等，就只有目标语言一种无标记数据
             dataset = build_or_load_dataset(args, tokenizer, mode='unlabeled')
         teacher_probs=[]
         if args.exp_type == 'acs_kd_s':
@@ -767,7 +774,8 @@ def main():
         # find the dir containing trained model, different dirs under different settings
         # if the model is multilingual, we will only use one target language for the output dir
         if 'mtl' in exp_type:
-            one_tgt_lang = 'fr'
+            # one_tgt_lang = 'ru'
+            one_tgt_lang = args.tgt_lang
             saved_model_dir = f"{args.outputDIR}/{args.tfm_type}-{args.src_lang}-{one_tgt_lang}-{exp_type}"
         
         elif exp_type == 'zero_shot':
@@ -862,7 +870,7 @@ def main():
         results_log_dir = f'{args.results_log}'
         if not os.path.exists(results_log_dir):
             os.mkdir(results_log_dir)
-        log_file_path = f"{args.results_log}/{args.tfm_type}-{args.exp_type}-{args.tgt_lang}.txt"
+        log_file_path = f"{args.results_log}/{args.tfm_type}-{args.exp_type}-{args.tgt_lang}-{args.seed}.txt"
         write_results_to_log(log_file_path, test_results[best_step_metric], args, dev_results, test_results, global_steps)
 
 

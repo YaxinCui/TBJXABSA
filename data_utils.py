@@ -294,6 +294,7 @@ def build_or_load_dataset(args, tokenizer, mode='train',kind=0):
         if isinstance(file_name_or_list, str):
             texts, tags = read_examples_from_file(file_path, args.task, args.tagging_schema, ratio=args.data_select)
         elif isinstance(file_name_or_list, list):
+            # 为什么ratio为0.5
             texts, tags = read_examples_from_multiple_file(file_path, args.task, args.tagging_schema, exp_type, ratio=0.5)
 
         # need to use XXFast to obtain the offset info
