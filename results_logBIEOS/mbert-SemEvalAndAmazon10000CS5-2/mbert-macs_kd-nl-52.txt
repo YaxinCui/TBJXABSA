@@ -1,0 +1,34 @@
+Fri Dec 30 00:14:08 2022
+Exp setting: mbert for XABSA (BIEOS) | 0.5483 | en -> nl in macs_kd setting.
+Model is saved in outputDIRBIEOS/mbert-SemEvalAndAmazon10000CS5-2/mbert-en-nl-macs_kd-52
+Train setting: bs=16, lr=5e-05, total_steps=2577 (Start eval from 1289)
+
+* Results *:  Dev  /  Test  
+Step-2400:
+micro_f1: 0.7122 / 0.5529     precision: 0.7418 / 0.5457     recall  : 0.6849 / 0.5603     eval_loss: 0.1405 / 0.1819     
+Step-2500:
+micro_f1: 0.7159 / 0.5545     precision: 0.7434 / 0.5438     recall  : 0.6904 / 0.5657     eval_loss: 0.1390 / 0.1821     
+Step-1300:
+micro_f1: 0.6879 / 0.5477     precision: 0.7315 / 0.5657     recall  : 0.6493 / 0.5308     eval_loss: 0.1578 / 0.1856     
+Step-1400:
+micro_f1: 0.7106 / 0.5461     precision: 0.7291 / 0.5377     recall  : 0.6932 / 0.5550     eval_loss: 0.1401 / 0.1836     
+Step-1900:
+micro_f1: 0.7057 / 0.5540     precision: 0.7373 / 0.5455     recall  : 0.6767 / 0.5630     eval_loss: 0.1400 / 0.1804     
+Step-2200:
+micro_f1: 0.7173 / 0.5633     precision: 0.7530 / 0.5664     recall  : 0.6849 / 0.5603     eval_loss: 0.1405 / 0.1774     
+Step-2300:
+micro_f1: 0.7187 / 0.5551     precision: 0.7463 / 0.5500     recall  : 0.6932 / 0.5603     eval_loss: 0.1424 / 0.1793     
+Step-1700:
+micro_f1: 0.7155 / 0.5593     precision: 0.7523 / 0.5506     recall  : 0.6822 / 0.5684     eval_loss: 0.1435 / 0.1782     
+Step-1800:
+micro_f1: 0.7181 / 0.5485     precision: 0.7515 / 0.5373     recall  : 0.6877 / 0.5603     eval_loss: 0.1422 / 0.1829     
+Step-1500:
+micro_f1: 0.7020 / 0.5561     precision: 0.7357 / 0.5547     recall  : 0.6712 / 0.5576     eval_loss: 0.1450 / 0.1793     
+Step-2100:
+micro_f1: 0.7298 / 0.5483     precision: 0.7544 / 0.5419     recall  : 0.7068 / 0.5550     eval_loss: 0.1385 / 0.1777     
+Step-2000:
+micro_f1: 0.7173 / 0.5492     precision: 0.7530 / 0.5387     recall  : 0.6849 / 0.5603     eval_loss: 0.1421 / 0.1813     
+Step-1600:
+micro_f1: 0.6965 / 0.5660     precision: 0.7370 / 0.5638     recall  : 0.6603 / 0.5684     eval_loss: 0.1500 / 0.1792     
+
+

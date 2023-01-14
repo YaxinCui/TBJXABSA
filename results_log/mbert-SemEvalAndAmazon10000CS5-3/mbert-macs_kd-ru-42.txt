@@ -1,0 +1,42 @@
+Thu Dec 29 10:13:04 2022
+Exp setting: mbert for XABSA (BIO) | 0.5416 | en -> ru in macs_kd setting.
+Model is saved in outputDIR/mbert-SemEvalAndAmazon10000CS5-3/mbert-en-ru-macs_kd-42
+Train setting: bs=16, lr=4e-05, total_steps=3866 (Start eval from 1289)
+
+* Results *:  Dev  /  Test  
+Step-2550:
+micro_f1: 0.6963 / 0.5345     precision: 0.7082 / 0.5206     recall  : 0.6849 / 0.5492     eval_loss: 0.1532 / 0.1951     
+Step-2400:
+micro_f1: 0.6857 / 0.5324     precision: 0.6839 / 0.5077     recall  : 0.6877 / 0.5598     eval_loss: 0.1558 / 0.1975     
+Step-3450:
+micro_f1: 0.6899 / 0.5346     precision: 0.7037 / 0.5152     recall  : 0.6767 / 0.5556     eval_loss: 0.1508 / 0.1951     
+Step-2700:
+micro_f1: 0.7024 / 0.5343     precision: 0.7064 / 0.5111     recall  : 0.6986 / 0.5598     eval_loss: 0.1490 / 0.1961     
+Step-1650:
+micro_f1: 0.6962 / 0.5470     precision: 0.7051 / 0.5237     recall  : 0.6877 / 0.5725     eval_loss: 0.1534 / 0.1927     
+Step-2250:
+micro_f1: 0.7080 / 0.5402     precision: 0.7297 / 0.5277     recall  : 0.6877 / 0.5534     eval_loss: 0.1488 / 0.1961     
+Step-1350:
+micro_f1: 0.7130 / 0.5416     precision: 0.7569 / 0.5620     recall  : 0.6740 / 0.5228     eval_loss: 0.1585 / 0.1893     
+Step-2850:
+micro_f1: 0.6903 / 0.5283     precision: 0.6875 / 0.5029     recall  : 0.6932 / 0.5566     eval_loss: 0.1516 / 0.1997     
+Step-3000:
+micro_f1: 0.6979 / 0.5265     precision: 0.7028 / 0.5039     recall  : 0.6932 / 0.5513     eval_loss: 0.1510 / 0.1953     
+Step-1950:
+micro_f1: 0.6882 / 0.5348     precision: 0.7061 / 0.5261     recall  : 0.6712 / 0.5439     eval_loss: 0.1523 / 0.1930     
+Step-3300:
+micro_f1: 0.6877 / 0.5386     precision: 0.6906 / 0.5129     recall  : 0.6849 / 0.5672     eval_loss: 0.1479 / 0.1951     
+Step-1800:
+micro_f1: 0.6945 / 0.5361     precision: 0.7074 / 0.5066     recall  : 0.6822 / 0.5693     eval_loss: 0.1530 / 0.1997     
+Step-3150:
+micro_f1: 0.6995 / 0.5300     precision: 0.7005 / 0.5000     recall  : 0.6986 / 0.5640     eval_loss: 0.1485 / 0.1980     
+Step-1500:
+micro_f1: 0.6955 / 0.5465     precision: 0.7094 / 0.5211     recall  : 0.6822 / 0.5746     eval_loss: 0.1522 / 0.1970     
+Step-3600:
+micro_f1: 0.6896 / 0.5308     precision: 0.6944 / 0.5082     recall  : 0.6849 / 0.5556     eval_loss: 0.1479 / 0.1949     
+Step-2100:
+micro_f1: 0.7037 / 0.5329     precision: 0.7147 / 0.5148     recall  : 0.6932 / 0.5524     eval_loss: 0.1526 / 0.1997     
+Step-3750:
+micro_f1: 0.6886 / 0.5305     precision: 0.6896 / 0.5033     recall  : 0.6877 / 0.5608     eval_loss: 0.1489 / 0.1962     
+
+

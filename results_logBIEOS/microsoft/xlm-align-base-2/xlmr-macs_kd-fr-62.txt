@@ -1,0 +1,34 @@
+Fri Dec 30 04:01:33 2022
+Exp setting: xlmr for XABSA (BIEOS) | 0.6116 | en -> fr in macs_kd setting.
+Model is saved in outputDIRBIEOS/microsoft/xlm-align-base-2/xlmr-en-fr-macs_kd-62
+Train setting: bs=16, lr=5e-05, total_steps=2577 (Start eval from 1289)
+
+* Results *:  Dev  /  Test  
+Step-2400:
+micro_f1: 0.7748 / 0.6172     precision: 0.7717 / 0.6397     recall  : 0.7781 / 0.5963     eval_loss: 0.1214 / 0.1975     
+Step-2500:
+micro_f1: 0.7709 / 0.6242     precision: 0.7720 / 0.6458     recall  : 0.7699 / 0.6040     eval_loss: 0.1206 / 0.1952     
+Step-1300:
+micro_f1: 0.7859 / 0.6116     precision: 0.7775 / 0.6367     recall  : 0.7945 / 0.5886     eval_loss: 0.1241 / 0.2138     
+Step-1400:
+micro_f1: 0.7726 / 0.6009     precision: 0.7726 / 0.6155     recall  : 0.7726 / 0.5871     eval_loss: 0.1314 / 0.2032     
+Step-1900:
+micro_f1: 0.7732 / 0.6062     precision: 0.7711 / 0.6452     recall  : 0.7753 / 0.5716     eval_loss: 0.1234 / 0.2048     
+Step-2200:
+micro_f1: 0.7727 / 0.6343     precision: 0.7676 / 0.6552     recall  : 0.7781 / 0.6148     eval_loss: 0.1232 / 0.1909     
+Step-2300:
+micro_f1: 0.7690 / 0.6175     precision: 0.7628 / 0.6423     recall  : 0.7753 / 0.5948     eval_loss: 0.1222 / 0.1950     
+Step-1700:
+micro_f1: 0.7660 / 0.6082     precision: 0.7650 / 0.6364     recall  : 0.7671 / 0.5824     eval_loss: 0.1259 / 0.1982     
+Step-1800:
+micro_f1: 0.7638 / 0.6027     precision: 0.7527 / 0.6318     recall  : 0.7753 / 0.5763     eval_loss: 0.1257 / 0.2005     
+Step-1500:
+micro_f1: 0.7574 / 0.5714     precision: 0.7534 / 0.6038     recall  : 0.7616 / 0.5424     eval_loss: 0.1334 / 0.2154     
+Step-2100:
+micro_f1: 0.7671 / 0.6244     precision: 0.7671 / 0.6592     recall  : 0.7671 / 0.5932     eval_loss: 0.1221 / 0.1880     
+Step-2000:
+micro_f1: 0.7708 / 0.6171     precision: 0.7586 / 0.6412     recall  : 0.7836 / 0.5948     eval_loss: 0.1232 / 0.1968     
+Step-1600:
+micro_f1: 0.7654 / 0.6134     precision: 0.7533 / 0.6232     recall  : 0.7781 / 0.6040     eval_loss: 0.1283 / 0.2027     
+
+

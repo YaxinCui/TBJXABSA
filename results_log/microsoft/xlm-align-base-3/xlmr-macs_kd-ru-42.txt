@@ -1,0 +1,42 @@
+Thu Dec 29 10:32:32 2022
+Exp setting: xlmr for XABSA (BIO) | 0.6207 | en -> ru in macs_kd setting.
+Model is saved in outputDIR/microsoft/xlm-align-base-3/xlmr-en-ru-macs_kd-42
+Train setting: bs=16, lr=4e-05, total_steps=3866 (Start eval from 1289)
+
+* Results *:  Dev  /  Test  
+Step-2550:
+micro_f1: 0.7829 / 0.6230     precision: 0.7851 / 0.5984     recall  : 0.7808 / 0.6497     eval_loss: 0.1164 / 0.1881     
+Step-2400:
+micro_f1: 0.7725 / 0.6123     precision: 0.7593 / 0.5684     recall  : 0.7863 / 0.6635     eval_loss: 0.1133 / 0.1964     
+Step-3450:
+micro_f1: 0.7826 / 0.6300     precision: 0.7763 / 0.5972     recall  : 0.7890 / 0.6667     eval_loss: 0.1139 / 0.1926     
+Step-2700:
+micro_f1: 0.7683 / 0.6271     precision: 0.7642 / 0.5964     recall  : 0.7726 / 0.6614     eval_loss: 0.1150 / 0.1906     
+Step-1650:
+micro_f1: 0.7789 / 0.6143     precision: 0.7666 / 0.5825     recall  : 0.7918 / 0.6497     eval_loss: 0.1184 / 0.1948     
+Step-2250:
+micro_f1: 0.7744 / 0.6100     precision: 0.7682 / 0.5809     recall  : 0.7808 / 0.6423     eval_loss: 0.1121 / 0.1972     
+Step-1350:
+micro_f1: 0.7658 / 0.6145     precision: 0.7701 / 0.6020     recall  : 0.7616 / 0.6275     eval_loss: 0.1126 / 0.1820     
+Step-2850:
+micro_f1: 0.7729 / 0.6305     precision: 0.7627 / 0.5947     recall  : 0.7836 / 0.6709     eval_loss: 0.1092 / 0.1889     
+Step-3000:
+micro_f1: 0.7874 / 0.6279     precision: 0.7832 / 0.5918     recall  : 0.7918 / 0.6688     eval_loss: 0.1141 / 0.1909     
+Step-1950:
+micro_f1: 0.7765 / 0.6105     precision: 0.7545 / 0.5595     recall  : 0.8000 / 0.6720     eval_loss: 0.1136 / 0.2080     
+Step-3300:
+micro_f1: 0.7748 / 0.6279     precision: 0.7717 / 0.6012     recall  : 0.7781 / 0.6571     eval_loss: 0.1122 / 0.1932     
+Step-1800:
+micro_f1: 0.7755 / 0.6340     precision: 0.7703 / 0.6009     recall  : 0.7808 / 0.6709     eval_loss: 0.1138 / 0.1827     
+Step-3150:
+micro_f1: 0.7782 / 0.6271     precision: 0.7730 / 0.5964     recall  : 0.7836 / 0.6614     eval_loss: 0.1121 / 0.1954     
+Step-1500:
+micro_f1: 0.7828 / 0.6212     precision: 0.7905 / 0.6062     recall  : 0.7753 / 0.6370     eval_loss: 0.1127 / 0.1874     
+Step-3600:
+micro_f1: 0.7842 / 0.6337     precision: 0.7769 / 0.6048     recall  : 0.7918 / 0.6656     eval_loss: 0.1139 / 0.1948     
+Step-2100:
+micro_f1: 0.7967 / 0.6207     precision: 0.7935 / 0.5908     recall  : 0.8000 / 0.6540     eval_loss: 0.1070 / 0.1861     
+Step-3750:
+micro_f1: 0.7744 / 0.6317     precision: 0.7682 / 0.5970     recall  : 0.7808 / 0.6709     eval_loss: 0.1134 / 0.1962     
+
+

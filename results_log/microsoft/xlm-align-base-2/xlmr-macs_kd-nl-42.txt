@@ -1,0 +1,34 @@
+Thu Dec 29 14:17:28 2022
+Exp setting: xlmr for XABSA (BIO) | 0.6401 | en -> nl in macs_kd setting.
+Model is saved in outputDIR/microsoft/xlm-align-base-2/xlmr-en-nl-macs_kd-42
+Train setting: bs=16, lr=4e-05, total_steps=2577 (Start eval from 1289)
+
+* Results *:  Dev  /  Test  
+Step-2400:
+micro_f1: 0.7912 / 0.6314     precision: 0.7934 / 0.5948     recall  : 0.7890 / 0.6729     eval_loss: 0.1212 / 0.1637     
+Step-2500:
+micro_f1: 0.7868 / 0.6369     precision: 0.7847 / 0.5922     recall  : 0.7890 / 0.6890     eval_loss: 0.1206 / 0.1646     
+Step-1300:
+micro_f1: 0.7621 / 0.6274     precision: 0.7520 / 0.5779     recall  : 0.7726 / 0.6863     eval_loss: 0.1373 / 0.1599     
+Step-1400:
+micro_f1: 0.7835 / 0.6207     precision: 0.7836 / 0.5822     recall  : 0.7836 / 0.6649     eval_loss: 0.1245 / 0.1634     
+Step-1900:
+micro_f1: 0.7836 / 0.6222     precision: 0.7784 / 0.5767     recall  : 0.7890 / 0.6756     eval_loss: 0.1254 / 0.1650     
+Step-2200:
+micro_f1: 0.7928 / 0.6401     precision: 0.7994 / 0.6148     recall  : 0.7863 / 0.6676     eval_loss: 0.1201 / 0.1596     
+Step-2300:
+micro_f1: 0.7797 / 0.6415     precision: 0.7787 / 0.6043     recall  : 0.7808 / 0.6836     eval_loss: 0.1194 / 0.1600     
+Step-1700:
+micro_f1: 0.7824 / 0.6236     precision: 0.7814 / 0.5810     recall  : 0.7836 / 0.6729     eval_loss: 0.1210 / 0.1612     
+Step-1800:
+micro_f1: 0.7830 / 0.6369     precision: 0.7799 / 0.5922     recall  : 0.7863 / 0.6890     eval_loss: 0.1268 / 0.1674     
+Step-1500:
+micro_f1: 0.7766 / 0.6379     precision: 0.7865 / 0.6043     recall  : 0.7671 / 0.6756     eval_loss: 0.1327 / 0.1625     
+Step-2100:
+micro_f1: 0.7884 / 0.6363     precision: 0.7906 / 0.6014     recall  : 0.7863 / 0.6756     eval_loss: 0.1176 / 0.1639     
+Step-2000:
+micro_f1: 0.7736 / 0.6146     precision: 0.7747 / 0.5796     recall  : 0.7726 / 0.6542     eval_loss: 0.1241 / 0.1697     
+Step-1600:
+micro_f1: 0.7877 / 0.6188     precision: 0.7978 / 0.5829     recall  : 0.7781 / 0.6595     eval_loss: 0.1194 / 0.1642     
+
+

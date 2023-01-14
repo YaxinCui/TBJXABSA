@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=2
 mbert_path=bert-base-multilingual-cased
 # xlmr_path=xlm-roberta-base
 #
 
-for xlmr_path in xlm-roberta-base xlm-align-base-42
+for xlmr_path in xlm-align-base-42 xlm-roberta-base
     do
     for seed in 42 52 62
         do
@@ -28,11 +28,11 @@ for xlmr_path in xlm-roberta-base xlm-align-base-42
                         --learning_rate 4e-5 \
                         --tagging_schema BIEOS \
                         --overwrite_output_dir \
-                        --max_steps 2000 \
-                        --train_begin_saving_step 1000 \
+                        --max_steps 2578 \
+                        --train_begin_saving_step 200 \
                         --results_log results_log${xlmr_path} \
                         --outputDIR outputDIR${xlmr_path} \
-                        --eval_begin_end 1000-2000
+                        --eval_begin_end 1500-2578
             done
         done
     done
@@ -62,11 +62,11 @@ for mbert_path in mbert-SemEvalAndAmazon10000CS5 bert-base-multilingual-cased
                         --learning_rate 4e-5 \
                         --tagging_schema BIEOS \
                         --overwrite_output_dir \
-                        --max_steps 2000 \
-                        --train_begin_saving_step 1000 \
+                        --max_steps 2578 \
+                        --train_begin_saving_step 200 \
                         --results_log results_log${mbert_path} \
                         --outputDIR outputDIR${mbert_path} \
-                        --eval_begin_end 1000-2000
+                        --eval_begin_end 1500-2578
             done
         done
     done

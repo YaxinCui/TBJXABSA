@@ -1,0 +1,28 @@
+Tue Dec 27 16:36:36 2022
+Exp setting: xlmr for XABSA (BIEOS) | 0.6391 | en -> nl in macs_kd setting.
+Model is saved in outputDIRxlm-roberta-base/xlmr-en-nl-macs_kd-42
+Train setting: bs=16, lr=4e-05, total_steps=2000 (Start eval from 1000)
+
+* Results *:  Dev  /  Test  
+Step-1000:
+micro_f1: 0.7572 / 0.6042     precision: 0.7669 / 0.5948     recall  : 0.7479 / 0.6139     eval_loss: 0.1300 / 0.1692     
+Step-1100:
+micro_f1: 0.7713 / 0.6391     precision: 0.7756 / 0.6349     recall  : 0.7671 / 0.6434     eval_loss: 0.1319 / 0.1594     
+Step-1200:
+micro_f1: 0.7662 / 0.6399     precision: 0.7737 / 0.6366     recall  : 0.7589 / 0.6434     eval_loss: 0.1276 / 0.1529     
+Step-1300:
+micro_f1: 0.7530 / 0.6186     precision: 0.7420 / 0.5847     recall  : 0.7644 / 0.6568     eval_loss: 0.1341 / 0.1705     
+Step-1400:
+micro_f1: 0.7677 / 0.6333     precision: 0.7797 / 0.6211     recall  : 0.7562 / 0.6461     eval_loss: 0.1338 / 0.1589     
+Step-1500:
+micro_f1: 0.7626 / 0.6215     precision: 0.7637 / 0.6035     recall  : 0.7616 / 0.6408     eval_loss: 0.1336 / 0.1619     
+Step-1600:
+micro_f1: 0.7621 / 0.6294     precision: 0.7520 / 0.5976     recall  : 0.7726 / 0.6649     eval_loss: 0.1315 / 0.1613     
+Step-1700:
+micro_f1: 0.7612 / 0.6253     precision: 0.7582 / 0.6035     recall  : 0.7644 / 0.6488     eval_loss: 0.1287 / 0.1591     
+Step-1800:
+micro_f1: 0.7692 / 0.6317     precision: 0.7713 / 0.6179     recall  : 0.7671 / 0.6461     eval_loss: 0.1281 / 0.1590     
+Step-1900:
+micro_f1: 0.7650 / 0.6290     precision: 0.7629 / 0.6154     recall  : 0.7671 / 0.6434     eval_loss: 0.1290 / 0.1565     
+
+

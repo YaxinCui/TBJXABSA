@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=3
 # xlmr_path=xlm-roberta-base
 #
 
-for xlmr_path in microsoft/xlm-align-base xlm-align-base-csmlm-42
+for xlmr_path in xlm-roberta-base xlm-align-base-csmlm-42
     do
-    for seed in 42 52 62
+    for seed in 42
         do
         for target in ru es fr nl
             do
@@ -14,7 +14,7 @@ for xlmr_path in microsoft/xlm-align-base xlm-align-base-csmlm-42
                 mkdir -p results_logBIEOS/${xlmr_path}-${max_steps}
                 mkdir -p outputDIRBIEOS/${xlmr_path}-${max_steps}
                 nohup python main.py --tfm_type xlmr \
-                            --exp_type macs_kd \
+                            --exp_type mtl \
                             --model_name_or_path $xlmr_path \
                             --data_dir data \
                             --src_lang en \

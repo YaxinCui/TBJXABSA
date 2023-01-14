@@ -1,0 +1,34 @@
+Wed Dec 28 18:16:16 2022
+Exp setting: mbert for XABSA (BIEOS) | 0.5421 | en -> ru in macs_kd setting.
+Model is saved in outputDIR/bert-base-multilingual-cased-4/mbert-en-ru-macs_kd-42
+Train setting: bs=16, lr=4e-05, total_steps=5155 (Start eval from 2578)
+
+* Results *:  Dev  /  Test  
+Step-5000:
+micro_f1: 0.7272 / 0.5406     precision: 0.7683 / 0.5504     recall  : 0.6904 / 0.5312     eval_loss: 0.1455 / 0.2245     
+Step-4400:
+micro_f1: 0.7233 / 0.5352     precision: 0.7629 / 0.5405     recall  : 0.6877 / 0.5302     eval_loss: 0.1439 / 0.2252     
+Step-3200:
+micro_f1: 0.7177 / 0.5419     precision: 0.7441 / 0.5399     recall  : 0.6932 / 0.5439     eval_loss: 0.1473 / 0.2334     
+Step-3800:
+micro_f1: 0.7293 / 0.5390     precision: 0.7730 / 0.5373     recall  : 0.6904 / 0.5407     eval_loss: 0.1418 / 0.2243     
+Step-2600:
+micro_f1: 0.7201 / 0.5205     precision: 0.7695 / 0.5314     recall  : 0.6767 / 0.5101     eval_loss: 0.1563 / 0.2322     
+Step-4200:
+micro_f1: 0.7280 / 0.5356     precision: 0.7667 / 0.5391     recall  : 0.6932 / 0.5323     eval_loss: 0.1419 / 0.2248     
+Step-4600:
+micro_f1: 0.7288 / 0.5331     precision: 0.7788 / 0.5474     recall  : 0.6849 / 0.5196     eval_loss: 0.1465 / 0.2239     
+Step-3000:
+micro_f1: 0.7084 / 0.5330     precision: 0.7570 / 0.5557     recall  : 0.6658 / 0.5122     eval_loss: 0.1519 / 0.2272     
+Step-3400:
+micro_f1: 0.7205 / 0.5352     precision: 0.7471 / 0.5249     recall  : 0.6959 / 0.5460     eval_loss: 0.1451 / 0.2312     
+Step-4000:
+micro_f1: 0.7270 / 0.5391     precision: 0.7644 / 0.5429     recall  : 0.6932 / 0.5354     eval_loss: 0.1433 / 0.2265     
+Step-4800:
+micro_f1: 0.7248 / 0.5410     precision: 0.7733 / 0.5524     recall  : 0.6822 / 0.5302     eval_loss: 0.1457 / 0.2233     
+Step-3600:
+micro_f1: 0.7343 / 0.5421     precision: 0.7809 / 0.5583     recall  : 0.6932 / 0.5270     eval_loss: 0.1452 / 0.2248     
+Step-2800:
+micro_f1: 0.7122 / 0.5254     precision: 0.7585 / 0.5326     recall  : 0.6712 / 0.5185     eval_loss: 0.1439 / 0.2222     
+
+

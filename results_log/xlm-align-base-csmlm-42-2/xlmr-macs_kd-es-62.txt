@@ -1,0 +1,34 @@
+Fri Dec 30 05:47:52 2022
+Exp setting: xlmr for XABSA (BIO) | 0.6343 | en -> es in macs_kd setting.
+Model is saved in outputDIR/xlm-align-base-csmlm-42-2/xlmr-en-es-macs_kd-62
+Train setting: bs=16, lr=4e-05, total_steps=2577 (Start eval from 1289)
+
+* Results *:  Dev  /  Test  
+Step-2400:
+micro_f1: 0.7777 / 0.6328     precision: 0.7694 / 0.5960     recall  : 0.7863 / 0.6746     eval_loss: 0.1078 / 0.1935     
+Step-2500:
+micro_f1: 0.7765 / 0.6369     precision: 0.7724 / 0.6056     recall  : 0.7808 / 0.6718     eval_loss: 0.1079 / 0.1917     
+Step-1300:
+micro_f1: 0.7776 / 0.6205     precision: 0.7745 / 0.5798     recall  : 0.7808 / 0.6676     eval_loss: 0.1085 / 0.2032     
+Step-1400:
+micro_f1: 0.7809 / 0.6337     precision: 0.7757 / 0.5901     recall  : 0.7863 / 0.6844     eval_loss: 0.1126 / 0.1984     
+Step-1900:
+micro_f1: 0.7820 / 0.6376     precision: 0.7778 / 0.6012     recall  : 0.7863 / 0.6788     eval_loss: 0.1060 / 0.1948     
+Step-2200:
+micro_f1: 0.7863 / 0.6450     precision: 0.7863 / 0.6100     recall  : 0.7863 / 0.6844     eval_loss: 0.1078 / 0.1902     
+Step-2300:
+micro_f1: 0.7874 / 0.6343     precision: 0.7832 / 0.6020     recall  : 0.7918 / 0.6704     eval_loss: 0.1076 / 0.1966     
+Step-1700:
+micro_f1: 0.7685 / 0.6266     precision: 0.7729 / 0.5915     recall  : 0.7644 / 0.6662     eval_loss: 0.1108 / 0.1959     
+Step-1800:
+micro_f1: 0.7732 / 0.6255     precision: 0.7711 / 0.5874     recall  : 0.7753 / 0.6690     eval_loss: 0.1080 / 0.2080     
+Step-1500:
+micro_f1: 0.7717 / 0.6249     precision: 0.7655 / 0.5896     recall  : 0.7781 / 0.6648     eval_loss: 0.1076 / 0.2037     
+Step-2100:
+micro_f1: 0.7788 / 0.6286     precision: 0.7715 / 0.5906     recall  : 0.7863 / 0.6718     eval_loss: 0.1050 / 0.1974     
+Step-2000:
+micro_f1: 0.7864 / 0.6232     precision: 0.7760 / 0.5822     recall  : 0.7973 / 0.6704     eval_loss: 0.1045 / 0.1995     
+Step-1600:
+micro_f1: 0.7815 / 0.6178     precision: 0.7742 / 0.5791     recall  : 0.7890 / 0.6620     eval_loss: 0.1074 / 0.2019     
+
+

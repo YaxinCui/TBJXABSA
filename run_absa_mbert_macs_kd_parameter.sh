@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 export CUDA_VISIBLE_DEVICES=0
-# xlmr_path=xlm-roberta-base
+mbert_path=bert-base-multilingual-cased
+# model_path=xlm-roberta-base
 #
 
-for xlmr_path in microsoft/xlm-align-base xlm-align-base-csmlm-42
+for model_path in mbert-SemEvalAndAmazon10000CS5 bert-base-multilingual-cased
     do
     for seed in 42 52 62
         do
@@ -11,11 +12,11 @@ for xlmr_path in microsoft/xlm-align-base xlm-align-base-csmlm-42
             do
             for max_steps in 2
                 do
-                mkdir -p results_logBIEOS/${xlmr_path}-${max_steps}
-                mkdir -p outputDIRBIEOS/${xlmr_path}-${max_steps}
-                nohup python main.py --tfm_type xlmr \
+                mkdir -p results_logBIEOS/${model_path}-${max_steps}
+                mkdir -p outputDIRBIEOS/${model_path}-${max_steps}
+                nohup python main.py --tfm_type mbert \
                             --exp_type macs_kd \
-                            --model_name_or_path $xlmr_path \
+                            --model_name_or_path $model_path \
                             --data_dir data \
                             --src_lang en \
                             --tgt_lang ${target} \
@@ -33,9 +34,9 @@ for xlmr_path in microsoft/xlm-align-base xlm-align-base-csmlm-42
                             --max_steps $(expr 1289 \* $max_steps - 1) \
                             --save_steps 100 \
                             --train_begin_saving_step $(expr 1289 \* $max_steps / 2) \
-                            --results_log results_logBIEOS/${xlmr_path}-${max_steps} \
-                            --outputDIR outputDIRBIEOS/${xlmr_path}-${max_steps} \
-                            --eval_begin_end $(expr 1289 \* $max_steps / 2)-$(expr 1289 \* ${max_steps} - 1) > outputDIRBIEOS/${xlmr_path}-${max_steps}/output.text 2>&1
+                            --results_log results_logBIEOS/${model_path}-${max_steps} \
+                            --outputDIR outputDIRBIEOS/${model_path}-${max_steps} \
+                            --eval_begin_end $(expr 1289 \* $max_steps / 2)-$(expr 1289 \* ${max_steps} - 1) > outputDIRBIEOS/${model_path}-${max_steps}/output.text 2>&1
                 done
             done
         done
